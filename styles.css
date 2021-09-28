@@ -79,10 +79,15 @@ body {
     overflow-y: scroll;
 }
 
+.tweetboxIcons {
+    display: flex;
+}
+
 .feed__header {
     position: sticky;
-    top: 0;
-    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     z-index: 100;
     border: 1px solid var(--twitter-background);
     padding: (15px 20px);
@@ -223,6 +228,7 @@ body {
 
 .widgets_input input {
     background-color: var(--twitter-background);
+    border: none;
     outline: none;
 }
 
@@ -236,4 +242,9 @@ body {
     padding: 20px;
     background-color: #f5f8fa;
     border-radius: 20px;
+}
+
+.widgets__widgetcontainer h2 {
+    font-size: 18px;
+    font-weight: 800px;
 }
